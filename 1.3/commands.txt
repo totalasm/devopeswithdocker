@@ -1,0 +1,2 @@
+docker run -d --name looper devopsdockeruh/simple-web-service:ubuntu
+docker exec -it looper sh -c "tail -f ./text.log"
