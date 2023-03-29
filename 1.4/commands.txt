@@ -1,0 +1,3 @@
+docker run -d  -it --name ubu ubuntu 
+docker exec -it ubu sh -c 'apt-get update; apt-get install curl;'
+docker exec -it ubu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
